@@ -11,4 +11,9 @@ class ProductVariantRepository extends BaseProductVariantRepository
     {
         return $this->findOneByCode(sprintf('CPCCL-FDTCH-%d-001', $menuItem->getId()));
     }
+
+    public function findOneByMenuItemWithModifiers(MenuItem $menuItem, array $modifiers)
+    {
+
+    }
 }
